@@ -1,0 +1,72 @@
+/* Additional responsive styles that might be needed */
+
+/* For very small devices (below 400px) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .mission h2, .about h2, .emergency h2, .stories h2, .donation-cta h2 {
+        font-size: 1.8rem;
+    }
+    
+    .emergency-number {
+        font-size: 1.5rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-about, .footer-links, .footer-contact {
+        min-width: 100%;
+    }
+}
+
+/* For landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        padding: 100px 0;
+    }
+}
+
+/* For tablets in portrait mode */
+@media (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+    .mission-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        min-width: calc(50% - 30px);
+    }
+}
+
+/* For high resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Add high-resolution background images if needed */
+}
+
+/* Print styles */
+@media print {
+    .header, .footer, .mobile-menu {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        color: black;
+        background: white;
+    }
+    
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}
