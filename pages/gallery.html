@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Animal Welfare People</title>
+    <meta name="description" content="Photo gallery of our rescued animals and activities at Animal Welfare People in Dibrugarh, Assam.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation (same as index.html) -->
+    <header class="header">
+        <!-- Copy header from index.html -->
+    </header>
+
+    <!-- Gallery Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>See the animals we've rescued and the work we do</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rescue">Rescues</button>
+                <button class="filter-btn" data-filter="shelter">Shelter Life</button>
+                <button class="filter-btn" data-filter="adoption">Adoptions</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-item" data-category="rescue">
+                    <img src="../assets/images/gallery/rescue1.jpg" alt="Rescue Operation">
+                    <div class="overlay">
+                        <h3>Street Dog Rescue</h3>
+                        <p>Rescuing an injured dog from the streets of Dibrugarh</p>
+                    </div>
+                </div>
+                <div class="grid-item" data-category="shelter">
+                    <img src="../assets/images/gallery/shelter1.jpg" alt="Shelter Life">
+                    <div class="overlay">
+                        <h3>Daily Care</h3>
+                        <p>Volunteers feeding the animals at our shelter</p>
+                    </div>
+                </div>
+                <div class="grid-item" data-category="adoption">
+                    <img src="../assets/images/gallery/adoption1.jpg" alt="Happy Adoption">
+                    <div class="overlay">
+                        <h3>Happy Adoption</h3>
+                        <p>Buddy finding his forever home</p>
+                    </div>
+                </div>
+                <div class="grid-item" data-category="events">
+                    <img src="../assets/images/gallery/event1.jpg" alt="Awareness Camp">
+                    <div class="overlay">
+                        <h3>Awareness Camp</h3>
+                        <p>Educating school children about animal welfare</p>
+                    </div>
+                </div>
+                <div class="grid-item" data-category="rescue">
+                    <img src="../assets/images/gallery/rescue2.jpg" alt="Kitten Rescue">
+                    <div class="overlay">
+                        <h3>Kitten Rescue</h3>
+                        <p>Saving abandoned kittens from a drain</p>
+                    </div>
+                </div>
+                <div class="grid-item" data-category="shelter">
+                    <img src="../assets/images/gallery/shelter2.jpg" alt="Medical Care">
+                    <div class="overlay">
+                        <h3>Medical Treatment</h3>
+                        <p>Our vet providing care to a rescued dog</p>
+                    </div>
+                </div>
+                <div class="grid-item" data-category="adoption">
+                    <img src="../assets/images/gallery/adoption2.jpg" alt="Family Adoption">
+                    <div class="overlay">
+                        <h3>New Family Member</h3>
+                        <p>A family adopting their first pet from us</p>
+                    </div>
+                </div>
+                <div class="grid-item" data-category="events">
+                    <img src="../assets/images/gallery/event2.jpg" alt="Vaccination Drive">
+                    <div class="overlay">
+                        <h3>Vaccination Drive</h3>
+                        <p>Free rabies vaccination camp in Dibrugarh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Modal -->
+    <div class="photo-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="modal-caption"></div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <!-- Copy footer from index.html -->
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/gallery.js"></script>
+</body>
+</html>
