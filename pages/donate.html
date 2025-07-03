@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Animal Welfare People</title>
+    <meta name="description" content="Support Animal Welfare People in Dibrugarh, Assam through donations to help rescue and care for animals in need.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation (same as index.html) -->
+    <header class="header">
+        <!-- Copy header from index.html -->
+    </header>
+
+    <!-- Donate Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Support Our Cause</h1>
+            <p>Your donation helps us rescue and care for animals in need</p>
+        </div>
+    </section>
+
+    <!-- Donation Options -->
+    <section class="donation-options">
+        <div class="container">
+            <h2>Ways to Donate</h2>
+            <div class="options-grid">
+                <div class="option-card">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3>One-Time Donation</h3>
+                    <p>Make a single donation to support our ongoing work</p>
+                    <button class="btn btn-primary show-donation-form">Donate Now</button>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Monthly Support</h3>
+                    <p>Become a monthly donor and provide sustained help</p>
+                    <button class="btn btn-primary show-donation-form">Subscribe</button>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Sponsor an Animal</h3>
+                    <p>Cover the costs for a specific animal's care</p>
+                    <a href="#sponsor" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Wishlist Items</h3>
+                    <p>Donate supplies from our Amazon wishlist</p>
+                    <a href="#" class="btn btn-primary">View List</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="donation-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Make a Donation</h2>
+                <form class="donation-form">
+                    <div class="form-group">
+                        <label for="donor-name">Full Name</label>
+                        <input type="text" id="donor-name" name="donor-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-email">Email</label>
+                        <input type="email" id="donor-email" name="donor-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-phone">Phone Number</label>
+                        <input type="tel" id="donor-phone" name="donor-phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Donation Amount (₹)</label>
+                        <div class="amount-options">
+                            <button type="button" class="donation-amount" data-amount="500">500</button>
+                            <button type="button" class="donation-amount" data-amount="1000">1000</button>
+                            <button type="button" class="donation-amount" data-amount="2000">2000</button>
+                            <button type="button" class="donation-amount" data-amount="5000">5000</button>
+                            <input type="number" id="custom-amount" placeholder="Other amount">
+                        </div>
+                        <input type="hidden" id="amount" name="amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donation-purpose">Purpose (optional)</label>
+                        <select id="donation-purpose" name="donation-purpose">
+                            <option value="general">General Donation</option>
+                            <option value="medical">Medical Fund</option>
+                            <option value="shelter">Shelter Maintenance</option>
+                            <option value="rescue">Rescue Operations</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-message">Message (optional)</label>
+                        <textarea id="donor-message" name="donor-message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Proceed to Payment</button>
+                </form>
+            </div>
+            <div class="donation-info">
+                <h3>How Your Donation Helps</h3>
+                <ul>
+                    <li><i class="fas fa-paw"></i> ₹500 feeds 10 dogs for a day</li>
+                    <li><i class="fas fa-medkit"></i> ₹1000 provides vaccinations for 5 animals</li>
+                    <li><i class="fas fa-ambulance"></i> ₹2000 covers one emergency rescue operation</li>
+                    <li><i class="fas fa-home"></i> ₹5000 sponsors shelter maintenance for a week</li>
+                </ul>
+                <div class="tax-info">
+                    <h4>Tax Benefits</h4>
+                    <p>Animal Welfare People is a registered NGO under Section 12A of the Income Tax Act. Donations are eligible for 50% tax exemption under Section 80G.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsor Section -->
+    <section class="sponsor-section" id="sponsor">
+        <div class="container">
+            <h2>Sponsor an Animal</h2>
+            <p>Choose an animal to sponsor and cover their monthly care costs. You'll receive regular updates about your sponsored animal.</p>
+            <div class="sponsor-animals">
+                <div class="animal-card">
+                    <img src="../assets/images/sponsor1.jpg" alt="Rusty">
+                    <h3>Rusty</h3>
+                    <p>3 year old male dog, rescued from abuse</p>
+                    <p class="sponsor-cost">₹1500/month</p>
+                    <button class="btn btn-secondary">Sponsor Rusty</button>
+                </div>
+                <div class="animal-card">
+                    <img src="../assets/images/sponsor2.jpg" alt="Snowy">
+                    <h3>Snowy</h3>
+                    <p>2 year old female cat, special needs</p>
+                    <p class="sponsor-cost">₹2000/month</p>
+                    <button class="btn btn-secondary">Sponsor Snowy</button>
+                </div>
+                <div class="animal-card">
+                    <img src="../assets/images/sponsor3.jpg" alt="Bruno">
+                    <h3>Bruno</h3>
+                    <p>5 year old male dog, paralyzed but happy</p>
+                    <p class="sponsor-cost">₹2500/month</p>
+                    <button class="btn btn-secondary">Sponsor Bruno</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways to Help -->
+    <section class="other-ways">
+        <div class="container">
+            <h2>Other Ways to Help</h2>
+            <div class="ways-grid">
+                <div class="way-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Volunteer</h3>
+                    <p>Give your time and skills to help animals in need</p>
+                    <a href="../pages/contact.html" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="way-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Fundraise</h3>
+                    <p>Organize an event or campaign to support us</p>
+                    <a href="../pages/contact.html" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="way-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Spread the Word</h3>
+                    <p>Follow and share our work on social media</p>
+                    <div class="social-share">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <!-- Copy footer from index.html -->
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/donate.js"></script>
+</body>
+</html>
